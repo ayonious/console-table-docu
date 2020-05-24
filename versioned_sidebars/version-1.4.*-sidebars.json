@@ -1,0 +1,60 @@
+{
+  "version-1.4.*/docs": [
+    {
+      "type": "category",
+      "label": "Console Table Printer",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-1.4.*/doc-install-quick-start"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.4.*/doc-color"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.4.*/doc-filter"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.4.*/doc-sort"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.4.*/doc-alignment"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.4.*/doc-border-design"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.4.*/doc-typescript"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Table Printer CLI",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-1.4.*/doc-cli-install-quick-start"
+        }
+      ]
+    }
+  ],
+  "version-1.4.*/someSidebar": [
+    {
+      "type": "category",
+      "label": "Docusaurus",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-1.4.*/doc1"
+        }
+      ]
+    }
+  ]
+}

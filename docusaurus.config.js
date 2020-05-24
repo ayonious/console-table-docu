@@ -1,3 +1,5 @@
+const versions = require("./versions.json");
+
 module.exports = {
   title: "Console Table Printer", // Title for your website.
   tagline: "A tool to print colorful table on your console",
@@ -8,6 +10,7 @@ module.exports = {
   organizationName: "facebook", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.
   themeConfig: {
+    sidebarCollapsible: false,
     announcementBar: {
       id: "support",
       content:
@@ -21,10 +24,30 @@ module.exports = {
       },
       links: [
         {
-          to: "docs/",
-          activeBasePath: "docs",
           label: "Docs",
+          to: "docs/introduction", // "fake" link
           position: "left",
+          activeBasePath: "docs",
+          items: [
+            {
+              label: versions[0],
+              to: "docs/",
+              exact: true,
+            },
+            ...versions.slice(1).map((version) => ({
+              label: version,
+              to: `docs/${version}/`,
+            })),
+            {
+              label: "Master/latest",
+              to: "docs/next/",
+            },
+          ],
+        },
+        {
+          to: "versions",
+          label: `v${versions[0]}`,
+          position: "right",
         },
         {
           href: "https://github.com/ayonious/console-table-printer",
