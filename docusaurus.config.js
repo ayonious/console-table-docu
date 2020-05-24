@@ -14,10 +14,10 @@ module.exports = {
         '⭐️ If you like Console Table Printer, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/ayonious/console-table-printer">GitHub</a>! ⭐️',
     },
     navbar: {
-      title: "My Site",
+      title: "Console Table Printer",
       logo: {
-        alt: "My Site Logo",
-        src: "img/logo.svg",
+        alt: "CTP",
+        src: "img/logo.ico",
       },
       links: [
         {

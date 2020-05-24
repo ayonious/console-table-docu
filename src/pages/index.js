@@ -55,8 +55,6 @@ function Feature({ imageUrl, title, description }) {
 }
 
 function Features() {
-  const context = useDocusaurusContext();
-  const { siteConfig = {} } = context;
   return (
     <div>
       {features && features.length > 0 && (
@@ -75,54 +73,25 @@ function Features() {
 }
 
 function PageHeadLine() {
-  const context = useDocusaurusContext();
-  const { siteConfig = {} } = context;
   return (
-    <header className={classnames("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className={classnames(
-              "button button--outline button--secondary button--lg",
-              styles.getStarted
-            )}
-            to={useBaseUrl("docs/")}
-          >
-            Get Started
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
-
-function PageHeadLine2() {
-  const context = useDocusaurusContext();
-  const { siteConfig = {} } = context;
-  return (
-    <div className={styles.hero}>
-      <div className={styles.heroInner}>
-        <h1 className={styles.heroProjectTagline}>
+    <div className={styles.headline}>
+      <div className={styles.headlineSub}>
+        <h1 className={styles.headlineText}>
           <img
             alt="CTP Logo"
-            className={styles.heroLogo}
-            src={useBaseUrl("img/icon.ico")}
+            className={styles.productLogoHomePage}
+            src={useBaseUrl("img/logo.ico")}
           />
-          Print{" "}
-          <span className={styles.heroProjectKeywords}>colorful Tables</span> on
+          Print <span className={styles.coloredWords}>colorful Tables</span> on
           Console, directly from{" "}
-          <span className={styles.heroProjectKeywords}>JSON string</span>
+          <span className={styles.coloredWords}>JSON string</span>
         </h1>
-        <div className={styles.indexCtas}>
-          <Link
-            className={styles.indexCtasGetStartedButton}
-            to={useBaseUrl("docs/doc-install-quick-start")}
-          >
-            Get Started
-          </Link>
-        </div>
+        <Link
+          className={styles.getStartButton}
+          to={useBaseUrl("docs/doc-install-quick-start")}
+        >
+          GET STARTED
+        </Link>
       </div>
     </div>
   );
@@ -134,7 +103,7 @@ function Home() {
   return (
     <Layout title={`${siteConfig.title}`} description={`${siteConfig.tagline}`}>
       <main>
-        <PageHeadLine2 />
+        <PageHeadLine />
         <Features />
       </main>
     </Layout>
