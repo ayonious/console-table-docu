@@ -70,7 +70,7 @@ module.exports = {
           showLastUpdateTime: true,
           // this enabled the edit button for documentation
           editUrl:
-            "https://github.com/ayonious/console-table-docu/blob/master/docs/",
+            "https://github.com/ayonious/console-table-docu/blob/master/",
         },
       },
     ],
