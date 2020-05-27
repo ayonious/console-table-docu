@@ -8,34 +8,29 @@ import styles from "./styles.module.css";
 
 const features = [
   {
-    title: <>Easy to Use</>,
-    imageUrl: "img/undraw_docusaurus_mountain.svg",
+    title: <>Light and Fast</>,
+    imageUrl: "img/undraw_floating_61u6.svg",
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        As light as just 25kb. Install it in no time and its balzing fast as
+        well{" "}
       </>
     ),
   },
   {
-    title: <>Focus on What Matters</>,
-    imageUrl: "img/undraw_docusaurus_tree.svg",
+    title: <>Free</>,
+    imageUrl: "img/undraw_gift1_sgf8.svg",
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Console Table Printer is free and open source under MIT license. It has
+        very minimal dependencies
       </>
     ),
   },
   {
-    title: <>Powered by React</>,
-    imageUrl: "img/undraw_docusaurus_react.svg",
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    title: <>Typed</>,
+    imageUrl: "img/undraw_powerful_26ry.svg",
+    description: <>Use it happily with typescript and Javascript</>,
   },
 ];
 
