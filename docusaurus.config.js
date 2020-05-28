@@ -65,7 +65,7 @@ module.exports = {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "Learn",
           items: [
             {
               label: "Quick Start",
@@ -74,6 +74,19 @@ module.exports = {
             {
               label: "Getting Started With CLI",
               to: "docs/doc-cli-install-quick-start",
+            },
+          ],
+        },
+        {
+          title: "More",
+          items: [
+            {
+              label: "GitHub",
+              href: "https://www.npmjs.com/package/console-table-printer",
+            },
+            {
+              label: "Npmjs",
+              href: "https://www.npmjs.com/package/console-table-printer",
             },
           ],
         },
