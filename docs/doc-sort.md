@@ -12,6 +12,7 @@ new Table({
     { name: "column2", alignment: "right" },
     { name: "column3" },
   ],
+  // highlight-next-line
   sort: (row1, row2) => row2.column1 - row1.column1, // sorting order of rows (optional), this is normal js sort function for Array.sort
 });
 ```

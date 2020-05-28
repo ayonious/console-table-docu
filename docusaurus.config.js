@@ -23,7 +23,7 @@ module.exports = {
         src: "img/logo.ico",
       },
       links: [
-        {
+        /*{
           label: "Docs",
           to: "docs/introduction", // "fake" link
           position: "left",
@@ -46,9 +46,9 @@ module.exports = {
         },
         {
           to: "versions",
-          label: `v${versions[0]}`,
+          label: `${versions && versions[0 || ""]}`,
           position: "right",
-        },
+        },*/
         {
           href: "https://github.com/ayonious/console-table-printer",
           label: "GitHub",
