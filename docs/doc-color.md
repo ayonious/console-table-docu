@@ -8,7 +8,7 @@ sidebar_label: Coloring
 
 You can put color as either entire Row or entire column
 
-```javascript
+```jsx
 const p = new Table({
   columns: [
     // highlight-next-line
