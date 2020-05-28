@@ -8,7 +8,7 @@ sidebar_label: Coloring
 
 You can put color as either entire Row or entire column
 
-```jsx
+```jsx {3}
 const p = new Table({
   columns: [
     // highlight-next-line
@@ -17,8 +17,10 @@ const p = new Table({
   ],
 });
 
-// highlight-next-line
+// highlight-start
 p.addRow({ index: 1, text: "red wine", value: 10.212 }, { color: "green" }); // row coloring
+// highlight-end
+
 p.addRow({ index: 2, text: "green gemuse", value: 20.0 });
 p.addRow(
   { index: 3, text: "gelb bananen", value: 100, is_priority_today: "Y" },
