@@ -11,10 +11,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 You can put color as either entire Row or entire column
 
 ```js
+const { Table } = require("console-table-printer");
+
 const p = new Table({
   columns: [
     // highlight-next-line
-    { name: "index", alignment: "left", color: "blue" }, // solumn coloring
+    { name: "index", alignment: "left", color: "yellow" }, // solumn coloring
     { name: "text", alignment: "right" },
   ],
 });
