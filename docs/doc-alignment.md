@@ -11,11 +11,8 @@ You can put properties for alignment
 ```javascript
 const p = new Table({
   columns: [
-    // ...
-    // highlight-start
-    { name: "index", alignment: "left", color: "blue" }, //with alignment and color
-    // highlight-end
-    // ...
+    // highlight-next-line
+    { name: "index", alignment: "left", color: "blue" },
     { name: "text", alignment: "right" },
   ],
 });

@@ -4,19 +4,10 @@ title: Border Design
 sidebar_label: Border Design
 ---
 
-## Possible border Style of table
-
-## fatBorder:
-
 ```typescript
-import { Table } from "console-table-printer";
-
 const p = new Table({
-// ...
-// highlight-start
+  // highlight-next-line
   style: "fatBorder", //style of border of the table
-// highlight-end
-// ...
   columns: [{ name: "index" }, { name: "text" }, { name: "value" }],
 });
 
@@ -30,3 +21,8 @@ p.printTable();
 ## thinBorder
 
 ![Screenshot](https://cdn.jsdelivr.net/gh/ayonious/console-table-printer@master/static-resources/screenshot-thin-border.png)
+
+## Possible values of Border
+
+- thinBorder (default)
+- fatBorder

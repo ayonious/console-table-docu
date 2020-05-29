@@ -10,18 +10,16 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 You can put color as either entire Row or entire column
 
-```jsx {3}
+```jsx
 const p = new Table({
   columns: [
     // highlight-next-line
-    { name: "index", alignment: "left", color: "blue" }, //Column coloring
+    { name: "index", alignment: "left", color: "blue" },
     { name: "text", alignment: "right" },
   ],
 });
 
-// highlight-start
 p.addRow({ index: 1, text: "red wine", value: 10.212 }, { color: "green" }); // row coloring
-// highlight-end
 
 p.addRow({ index: 2, text: "green gemuse", value: 20.0 });
 p.addRow(
