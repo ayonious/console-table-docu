@@ -4,6 +4,8 @@ title: Install and Quick start
 sidebar_label: Install and Quick start
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 ## Installation
 
 ```bash npm2yarn
@@ -27,4 +29,4 @@ printTable(testCases);
 
 Output:
 
-![Screenshot](https://cdn.jsdelivr.net/gh/ayonious/console-table-printer@master/static-resources/quick-print.png)
+<img alt="Screenshot" src={useBaseUrl('img/examples/quick-print.png')}/>

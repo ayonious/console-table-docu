@@ -4,6 +4,8 @@ title: Alignment
 sidebar_label: Alignment
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 You can put properties for alignment
 
 ```javascript

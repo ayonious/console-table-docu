@@ -4,6 +4,8 @@ title: Quick Start
 sidebar_label: Quick Start
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 ## Synopsis
 
 Printing Simple Table on your bash terminal. Its useful when you want to present some tables on console.
@@ -24,7 +26,7 @@ ctp -i '[{ "id":3, "text":"like" }, {"id":4, "text":"tea"}]'
 
 Output:
 
-![Screenshot](https://cdn.jsdelivr.net/gh/ayonious/table-printer-cli@master/static-resources/quick-print.v3.png)
+<img alt="Docusaurus with Keytar" src={useBaseUrl('img/examples/quick-print.png')}/>
 
 You can also pipe the input from stdin
 

@@ -108,6 +108,9 @@ module.exports = {
           editUrl:
             "https://github.com/ayonious/console-table-docu/blob/master/",
         },
+        theme: {
+          customCss: require.resolve("./src/css/custom.css"),
+        },
       },
     ],
   ],

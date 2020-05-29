@@ -4,6 +4,8 @@ title: Coloring
 sidebar_label: Coloring
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 ## Coloring
 
 You can put color as either entire Row or entire column
@@ -33,7 +35,7 @@ p.addRow(
 p.printTable();
 ```
 
-![Screenshot](https://cdn.jsdelivr.net/gh/ayonious/console-table-printer@master/static-resources/screenshot-thin-border-column-props.2.png)
+<img alt="Screenshot" src={useBaseUrl('img/examples/screenshot-colored.png')}/>
 
 ## possible `color` values for rows/columns
 
