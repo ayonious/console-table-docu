@@ -29,4 +29,4 @@ printTable(testCases);
 
 Output:
 
-<img alt="Screenshot" src={useBaseUrl('img/examples/quick-print.png')}/>
+<img alt="Screenshot" src={useBaseUrl('img/examples/doc-install-quick-start/quick-print.png')}/>

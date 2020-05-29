@@ -4,6 +4,8 @@ title: Sort and Filter
 sidebar_label: Sort and Filter
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 ## Sort
 
 This is an optional param. Pass the sort function that will be used on each row to sort them

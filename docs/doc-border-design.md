@@ -4,6 +4,8 @@ title: Border Design
 sidebar_label: Border Design
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 ```typescript
 const p = new Table({
   // highlight-next-line

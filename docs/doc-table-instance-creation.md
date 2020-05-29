@@ -4,6 +4,8 @@ title: Create Table Instance
 sidebar_label: Create Table Instance
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 You can also create a new Table instance and print it like this
 
 ```javascript
