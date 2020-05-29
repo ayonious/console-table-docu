@@ -26,7 +26,7 @@ ctp -i '[{ "id":3, "text":"like" }, {"id":4, "text":"tea"}]'
 
 Output:
 
-<img alt="Docusaurus with Keytar" src={useBaseUrl('img/examples/quick-print.png')}/>
+<img alt="Screenshot" src={useBaseUrl('img/examples/doc-cli-install-quick-start/quick-print.v3.png')}/>
 
 You can also pipe the input from stdin
 

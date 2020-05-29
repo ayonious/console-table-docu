@@ -9,11 +9,15 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 You can put properties for alignment
 
 ```javascript
+const { Table } = require("console-table-printer");
+
 const p = new Table({
   columns: [
-    // highlight-next-line
-    { name: "index", alignment: "left", color: "blue" },
+    // highlight-start
+    { name: "index", alignment: "left" },
     { name: "text", alignment: "right" },
+    { name: "is_priority_today", alignment: "center" },
+    // highlight-end
   ],
 });
 
@@ -30,7 +34,7 @@ p.addRow(
 p.printTable();
 ```
 
-![Screenshot](https://cdn.jsdelivr.net/gh/ayonious/console-table-printer@master/static-resources/screenshot-thin-border-column-props.2.png)
+<img alt="Screenshot" src={useBaseUrl('img/examples/doc-alignment/screenshot.png')}/>
 
 ## possible `alignment` values for columns
 
