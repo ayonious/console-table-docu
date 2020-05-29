@@ -43,7 +43,7 @@ new Table();
 new Table(["column1", "column2", "column3"]);
 ```
 
-### 3. More Complext way
+### 3. More Complex way
 
 ```javascript
 new Table({
