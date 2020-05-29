@@ -1,8 +1,10 @@
 ---
 id: doc-sort-filter
 title: Sort and Filter
-sidebar_label: Sort
+sidebar_label: Sort and Filter
 ---
+
+## Sort
 
 ```javascript
 const table = new Table({
@@ -14,6 +16,7 @@ const table = new Table({
 table.addRows;
 ```
 
+## Filter
 
 ```javascript
 const table = new Table({
