@@ -99,7 +99,7 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         docs: {
-          homePageId: "doc1",
+          homePageId: "doc-install-quick-start",
           path: "docs",
           sidebarPath: require.resolve("./sidebars.js"),
           showLastUpdateAuthor: true,
