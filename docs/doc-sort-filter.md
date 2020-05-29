@@ -6,6 +6,8 @@ sidebar_label: Sort and Filter
 
 ## Sort
 
+This is an optional param. Pass the sort function that will be used on each row to sort them
+
 ```javascript
 const table = new Table({
   columns: [{ name: "column1" }, { name: "column2" }, { name: "column3" }],
@@ -17,6 +19,8 @@ table.addRows;
 ```
 
 ## Filter
+
+This is an optional param. Pass the filter function that will be used on each row to filter them
 
 ```javascript
 const table = new Table({
