@@ -6,7 +6,11 @@ sidebar_label: Border Design
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-```typescript
+You can configure the border of the table by passing style in Table constructor
+
+```js
+const { Table } = require("console-table-printer");
+
 const p = new Table({
   // highlight-next-line
   style: "fatBorder", //style of border of the table
@@ -18,13 +22,9 @@ p.addRow({ index: 2, text: "green gemuse", value: 20.0 });
 p.printTable();
 ```
 
-![Screenshot](https://cdn.jsdelivr.net/gh/ayonious/console-table-printer@master/static-resources/screenshot-fat-border.png)
+<img alt="Screenshot" src={useBaseUrl('img/examples/doc-border-design/fat.png')}/>
 
-## thinBorder
-
-![Screenshot](https://cdn.jsdelivr.net/gh/ayonious/console-table-printer@master/static-resources/screenshot-thin-border.png)
-
-## Possible values of Border
+## Possible values of Border style
 
 - thinBorder (default)
 - fatBorder

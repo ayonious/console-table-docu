@@ -15,8 +15,14 @@ const { Table } = require("console-table-printer");
 const p = new Table();
 
 //add rows with color
-p.addRow({ index: 1, text: "red wine please", value: 10.212 });
-p.addRow({ index: 2, text: "green gemuse please", value: 20.0 });
+p.addRow(
+  { index: 1, text: "red wine please", value: 10.212 },
+  { color: "red" }
+);
+p.addRow(
+  { index: 2, text: "green gemuse please", value: 20.0 },
+  { color: "green" }
+);
 p.addRows([
   //adding multiple rows are possible
   { index: 3, text: "gelb bananen bitte", value: 100 },
@@ -27,7 +33,7 @@ p.addRows([
 p.printTable();
 ```
 
-![Screenshot](https://cdn.jsdelivr.net/gh/ayonious/console-table-printer@master/static-resources/screenshot-simple.png)
+<img alt="Screenshot" src={useBaseUrl('img/examples/doc-table-instance-creation/screenshot.png')}/>
 
 ## Table instance creation
 
@@ -52,7 +58,7 @@ new Table({
   style: "fatBorder", //style of border of the table, (optional)
   columns: [
     { name: "column1", alignment: "left", color: "red" }, //with alignment and color
-    { name: "column2", alignment: "right" }, // color
+    { name: "column2", alignment: "right" },
     { name: "column3" },
   ],
   sort: (row1, row2) => row2.column1 - row1.column1, // sorting order of rows (optional)
@@ -60,7 +66,7 @@ new Table({
 });
 ```
 
-### Functions of table instance
+## Functions of table instance
 
 - `addRow(rowObjet, options)` adding single row.
 - `addRows(rowObjets)` adding multiple rows. array of row object. This case options will be applied to all the objects in row

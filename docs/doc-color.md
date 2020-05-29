@@ -10,15 +10,16 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 You can put color as either entire Row or entire column
 
-```jsx
+```js
 const p = new Table({
   columns: [
     // highlight-next-line
-    { name: "index", alignment: "left", color: "blue" },
+    { name: "index", alignment: "left", color: "blue" }, // solumn coloring
     { name: "text", alignment: "right" },
   ],
 });
 
+// highlight-next-line
 p.addRow({ index: 1, text: "red wine", value: 10.212 }, { color: "green" }); // row coloring
 
 p.addRow({ index: 2, text: "green gemuse", value: 20.0 });
@@ -33,7 +34,7 @@ p.addRow(
 p.printTable();
 ```
 
-<img alt="Screenshot" src={useBaseUrl('img/examples/screenshot-colored.png')}/>
+<img alt="Screenshot" src={useBaseUrl('img/examples/doc-color/screenshot-colored.png')}/>
 
 ## possible `color` values for rows/columns
 
