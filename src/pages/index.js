@@ -10,12 +10,7 @@ const features = [
   {
     title: <>Light and Fast</>,
     imageUrl: "img/undraw_floating_61u6.svg",
-    description: (
-      <>
-        It contains very minimal dependencies. cli size is 130kB and npm package
-        30kB.
-      </>
-    ),
+    description: <>It contains very minimal dependencies.</>,
   },
   {
     title: <>Free</>,
