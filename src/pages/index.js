@@ -12,8 +12,8 @@ const features = [
     imageUrl: "img/undraw_floating_61u6.svg",
     description: (
       <>
-        As light as just 25kb. Install it in no time and its balzing fast as
-        well{" "}
+        It contains very minimal dependencies. cli size is 130kB and npm package
+        30kB.
       </>
     ),
   },

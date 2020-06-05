@@ -56,7 +56,7 @@ module.exports = {
         },
         {
           href: "https://www.npmjs.com/package/console-table-printer",
-          label: "Npmjs",
+          label: "npmjs",
           position: "right",
         },
       ],
@@ -85,7 +85,7 @@ module.exports = {
               href: "https://www.npmjs.com/package/console-table-printer",
             },
             {
-              label: "Npmjs",
+              label: "npmjs",
               href: "https://www.npmjs.com/package/console-table-printer",
             },
           ],
