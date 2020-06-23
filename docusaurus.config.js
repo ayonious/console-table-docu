@@ -69,7 +69,7 @@ module.exports = {
           items: [
             {
               label: "Quick Start",
-              to: "docs/doc-install-quick-start",
+              to: "docs",
             },
             {
               label: "Getting Started With CLI",
