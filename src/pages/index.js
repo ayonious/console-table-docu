@@ -76,10 +76,7 @@ function PageHeadLine() {
           Console, directly from{" "}
           <span className={styles.coloredWords}>JSON string</span>
         </h1>
-        <Link
-          className={styles.getStartButton}
-          to={useBaseUrl("docs/doc-install-quick-start")}
-        >
+        <Link className={styles.getStartButton} to={useBaseUrl("docs")}>
           GET STARTED
         </Link>
       </div>
