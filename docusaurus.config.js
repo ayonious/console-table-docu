@@ -91,7 +91,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Nahiyan. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Nahiyan Kamal under MIT License. Built with Docusaurus.`,
     },
   },
   presets: [
