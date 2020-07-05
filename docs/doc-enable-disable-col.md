@@ -1,7 +1,7 @@
 ---
 id: doc-enable-disable-col
 title: Enable and Disable Columns
-sidebar_label: Enable and Disable Columuns
+sidebar_label: Enable and Disable Columns
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
