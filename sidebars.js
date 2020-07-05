@@ -6,6 +6,8 @@ module.exports = {
       "doc-color",
       "doc-sort-filter",
       "doc-alignment",
+      "doc-enable-disable-col",
+      "doc-computed-function",
       "doc-border-design",
       "doc-typescript",
     ],
