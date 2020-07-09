@@ -8,6 +8,7 @@ module.exports = {
       "doc-alignment",
       "doc-enable-disable-col",
       "doc-computed-function",
+      "doc-title",
       "doc-border-design",
       "doc-typescript",
     ],
