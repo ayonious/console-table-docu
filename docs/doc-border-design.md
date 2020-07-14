@@ -8,23 +8,98 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 You can configure the border of the table by passing style in Table constructor
 
+<img alt="Screenshot" src={useBaseUrl('img/examples/doc-border-design/fat.png')}/>
+
 ```js
 const { Table } = require("console-table-printer");
 
 const p = new Table({
-  // highlight-next-line
-  style: "fatBorder", //style of border of the table
-  columns: [{ name: "index" }, { name: "text" }, { name: "value" }],
+  style: {
+    /*
+        Style:
+        ╔══════╦═════╦══════╗
+        ║ hob  ║ foo ║ mia  ║
+        ╟══════╬═════╬══════╢
+        ║ ball ║ fox ║ mama ║
+        ╚══════╩═════╩══════╝
+        */
+    headerTop: {
+      left: "╔",
+      mid: "╦",
+      right: "╗",
+      other: "═",
+    },
+    headerBottom: {
+      left: "╟",
+      mid: "╬",
+      right: "╢",
+      other: "═",
+    },
+    tableBottom: {
+      left: "╚",
+      mid: "╩",
+      right: "╝",
+      other: "═",
+    },
+    vertical: "║",
+  },
+  columns: [
+    { name: "index", alignment: "left" },
+    { name: "text", alignment: "right" },
+    { name: "value" },
+  ],
 });
 
-p.addRow({ index: 1, text: "red wine", value: 10.212 });
-p.addRow({ index: 2, text: "green gemuse", value: 20.0 });
+// add rows with color
+p.addRow(
+  { index: 1, text: "I would like some red wine please", value: 10.212 },
+  { color: "red" }
+);
+p.addRow(
+  { index: 2, text: "I would like some green gemuse please", value: 20.0 },
+  { color: "green" }
+);
+p.addRow(
+  { index: 3, text: "I would like some gelb bananen bitte", value: 100 },
+  { color: "yellow" }
+);
+
+// print
 p.printTable();
 ```
 
-<img alt="Screenshot" src={useBaseUrl('img/examples/doc-border-design/fat.png')}/>
+You can also have colored borders using this style.
 
-## Possible values of Border style
+<img alt="Screenshot" src={useBaseUrl('img/examples/doc-border-design/fat-red.png')}/>
 
-- thinBorder (default)
-- fatBorder
+```js
+style: {
+    /*
+        Style: (red)
+        ╔══════╦═════╦══════╗
+        ║ hob  ║ foo ║ mia  ║
+        ╟══════╬═════╬══════╢
+        ║ ball ║ fox ║ mama ║
+        ╚══════╩═════╩══════╝
+        */
+    headerTop: {
+      left: '\x1b[31m╔\x1b[0m',
+      mid: '\x1b[31m╦\x1b[0m',
+      right: '\x1b[31m╗\x1b[0m',
+      other: '\x1b[31m═\x1b[0m',
+    },
+    headerBottom: {
+      left: '\x1b[31m╟\x1b[0m',
+      mid: '\x1b[31m╬\x1b[0m',
+      right: '\x1b[31m╢\x1b[0m',
+      other: '\x1b[31m═\x1b[0m',
+    },
+    tableBottom: {
+      left: '\x1b[31m╚\x1b[0m',
+      mid: '\x1b[31m╩\x1b[0m',
+      right: '\x1b[31m╝\x1b[0m',
+      other: '\x1b[31m═\x1b[0m',
+    },
+    vertical: '\x1b[31m║\x1b[0m',
+  },
+```
