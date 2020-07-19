@@ -1,12 +1,15 @@
 {
-  "name": "console-table-docu-2",
+  "name": "console-table-docu",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy"
+    "deploy": "docusaurus deploy",
+    "cy:run": "cypress run",
+    "cypress-web": "cypress open",
+    "test-integration": "start-server-and-test start 3000 cy:run"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.56",
@@ -26,5 +29,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cypress": "^4.10.0",
+    "start-server-and-test": "^1.11.2"
   }
 }
