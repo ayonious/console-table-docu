@@ -68,38 +68,42 @@ p.addRow(
 p.printTable();
 ```
 
-You can also have colored borders using this style.
+You can also have colored borders combining with 'chalk' library from npm
 
-<img alt="Screenshot" src={useBaseUrl('img/examples/doc-border-design/fat-red.png')}/>
+<img alt="Screenshot" src={useBaseUrl('img/examples/doc-border-design/fat-blue.png')}/>
 
 ```js
+// highlight-next-line
+const chalk = require('chalk'); // use chalk to color the ascii chars of border
+
+// this this style
 style: {
-    /*
-        Style: (red)
-        ╔══════╦═════╦══════╗
-        ║ hob  ║ foo ║ mia  ║
-        ╟══════╬═════╬══════╢
-        ║ ball ║ fox ║ mama ║
-        ╚══════╩═════╩══════╝
-        */
-    headerTop: {
-      left: '\x1b[31m╔\x1b[0m',
-      mid: '\x1b[31m╦\x1b[0m',
-      right: '\x1b[31m╗\x1b[0m',
-      other: '\x1b[31m═\x1b[0m',
-    },
-    headerBottom: {
-      left: '\x1b[31m╟\x1b[0m',
-      mid: '\x1b[31m╬\x1b[0m',
-      right: '\x1b[31m╢\x1b[0m',
-      other: '\x1b[31m═\x1b[0m',
-    },
-    tableBottom: {
-      left: '\x1b[31m╚\x1b[0m',
-      mid: '\x1b[31m╩\x1b[0m',
-      right: '\x1b[31m╝\x1b[0m',
-      other: '\x1b[31m═\x1b[0m',
-    },
-    vertical: '\x1b[31m║\x1b[0m',
+  /*
+      Style: (blue)
+      ╔══════╦═════╦══════╗
+      ║ hob  ║ foo ║ mia  ║
+      ╟══════╬═════╬══════╢
+      ║ ball ║ fox ║ mama ║
+      ╚══════╩═════╩══════╝
+      */
+  headerTop: {
+    left: chalk.blue('╔'),
+    mid: chalk.blue('╦'),
+    right: chalk.blue('╗'),
+    other: chalk.blue('═'),
   },
+  headerBottom: {
+    left: chalk.blue('╟'),
+    mid: chalk.blue('╬'),
+    right: chalk.blue('╢'),
+    other: chalk.blue('═'),
+  },
+  tableBottom: {
+    left: chalk.blue('╚'),
+    mid: chalk.blue('╩'),
+    right: chalk.blue('╝'),
+    other: chalk.blue('═'),
+  },
+  vertical: chalk.blue('║'),
+},
 ```
