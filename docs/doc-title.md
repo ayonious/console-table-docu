@@ -12,6 +12,7 @@ Currently all table Titles will be White Bold style and aligned center
 const { printTable, Table } = require("console-table-printer");
 
 const p = new Table({
+  // highlight-next-line
   title: "Analysis Results",
   columns: [{ name: "red_amount" }, { name: "blue_amount" }],
 });
@@ -36,4 +37,4 @@ p.addRows([
 p.printTable();
 ```
 
-<img alt="Screenshot" src={useBaseUrl('img/examples/doc-title/screenshot.png')}/>
+<img alt="Screenshot" src={useBaseUrl('img/examples/doc-title/screenshot.2.png')}/>
