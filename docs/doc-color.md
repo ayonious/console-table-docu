@@ -16,7 +16,7 @@ const { Table } = require("console-table-printer");
 const p = new Table({
   columns: [
     // highlight-next-line
-    { name: "index", alignment: "left", color: "yellow" }, // solumn coloring
+    { name: "index", alignment: "left", color: "yellow" }, // column coloring
     { name: "text", alignment: "right" },
   ],
 });
@@ -37,6 +37,30 @@ p.printTable();
 ```
 
 <img alt="Screenshot" src={useBaseUrl('img/examples/doc-color/screenshot-colored.png')}/>
+
+## Batch Row coloring
+
+```javascript
+const { printTable, Table } = require("console-table-printer");
+
+const p = new Table();
+
+p.addRows(
+  [
+    // adding multiple rows are possible
+    { index: 3, text: "green color text1", value: 100 },
+    { index: 4, text: "green color text2", value: 300 },
+  ],
+  // highlight-next-line
+  { color: "green" } // multiple rows sharing same properties
+);
+
+// print
+p.printTable();
+```
+
+<img alt="Screenshot" src={useBaseUrl('img/examples/doc-color/screenshot-colored-batch.png')}/>
+
 
 ## possible `color` values for rows/columns
 
