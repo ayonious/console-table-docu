@@ -2,6 +2,7 @@
 id: doc-install-quick-start
 title: Install and Quick start
 sidebar_label: Install and Quick start
+slug: /
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

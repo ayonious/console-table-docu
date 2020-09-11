@@ -10,6 +10,7 @@ module.exports = {
       "doc-computed-function",
       "doc-title",
       "doc-border-design",
+      "doc-render-console",
       "doc-typescript",
     ],
     "Table Printer CLI": ["doc-cli-install-quick-start"],

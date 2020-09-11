@@ -22,7 +22,7 @@ module.exports = {
         alt: "CTP",
         src: "img/logo.ico",
       },
-      links: [
+      items: [
         /*{
           label: "Docs",
           to: "docs/introduction", // "fake" link
@@ -99,7 +99,6 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         docs: {
-          homePageId: "doc-install-quick-start",
           path: "docs",
           sidebarPath: require.resolve("./sidebars.js"),
           showLastUpdateAuthor: true,
