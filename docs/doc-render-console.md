@@ -23,4 +23,4 @@ const tableStr = p.render();
 console.log(tableStr);
 ```
 
-<img alt="Screenshot" src={useBaseUrl('img/examples/doc-alignment/screenshot.png')}/>
+<img alt="Screenshot" src={useBaseUrl('img/examples/doc-render-console/screenshot.png')}/>
