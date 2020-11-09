@@ -15,8 +15,8 @@
     "@docusaurus/core": "^2.0.0-alpha.63",
     "@docusaurus/preset-classic": "^2.0.0-alpha.63",
     "classnames": "^2.2.6",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "browserslist": {
     "production": [
@@ -31,7 +31,7 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^5.1.0",
-    "start-server-and-test": "^1.11.3"
+    "cypress": "^5.6.0",
+    "start-server-and-test": "^1.11.5"
   }
 }
