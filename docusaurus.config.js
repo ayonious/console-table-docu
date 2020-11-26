@@ -7,7 +7,7 @@ module.exports = {
   baseUrl: "/", // Base URL for your project */
 
   favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
+  organizationName: "ayonious", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.
   themeConfig: {
     sidebarCollapsible: false,
