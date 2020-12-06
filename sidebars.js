@@ -9,6 +9,7 @@ module.exports = {
       "doc-enable-disable-col",
       "doc-computed-function",
       "doc-title",
+      "doc-column-title",
       "doc-border-design",
       "doc-render-console",
       "doc-typescript",
