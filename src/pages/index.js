@@ -62,23 +62,25 @@ function Features() {
   );
 }
 
+const ColoredText = ({text}) =>  <span className={styles.coloredWords}>{text}</span>;
+const UnColoredText = ({text}) =>  <span>{text}</span>;
+
+const GetStartedButton = () => <Link className={styles.getStartButton} to={useBaseUrl("docs")}> GET STARTED </Link>;
+
+const ProductLogo = () => <img alt="CTP Logo" className={styles.productLogoHomePage} src={useBaseUrl("img/logo.ico")} />;
+
 function PageHeadLine() {
   return (
     <div className={styles.headline}>
       <div className={styles.headlineSub}>
         <h1 className={styles.headlineText}>
-          <img
-            alt="CTP Logo"
-            className={styles.productLogoHomePage}
-            src={useBaseUrl("img/logo.ico")}
-          />
-          Print <span className={styles.coloredWords}>colorful Tables</span> on
-          Console, directly from{" "}
-          <span className={styles.coloredWords}>JSON string</span>
+          <ProductLogo />
+          <UnColoredText text="Print"/>
+          <ColoredText text=" colorful Tables"/>
+          <UnColoredText text=" on Console, directly from"/>
+          <ColoredText text=" JSON string"/>
         </h1>
-        <Link className={styles.getStartButton} to={useBaseUrl("docs")}>
-          GET STARTED
-        </Link>
+        <GetStartedButton />
       </div>
     </div>
   );
