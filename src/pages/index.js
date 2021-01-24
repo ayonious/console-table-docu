@@ -69,7 +69,7 @@ const GetStartedButton = () => <Link className={styles.getStartButton} to={useBa
 
 const ProductLogo = () => <img alt="CTP Logo" className={styles.productLogoHomePage} src={useBaseUrl("img/logo.ico")} />;
 
-function PageHeadLine() {
+const PageHeadLine = () => {
   return (
     <div className={styles.headline}>
       <div className={styles.headlineSub}>
