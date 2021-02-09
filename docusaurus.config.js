@@ -78,14 +78,31 @@ module.exports = {
           ],
         },
         {
+          title: "Decorate",
+          items: [
+            {
+              label: "Color",
+              to: "docs/doc-color",
+            },
+            {
+              label: "Border",
+              to: "docs/doc-border-design",
+            },
+            {
+              label: "Alignment",
+              to: "docs/doc-alignment",
+            },
+          ],
+        },
+        {
           title: "More",
           items: [
             {
               label: "GitHub",
-              href: "https://www.npmjs.com/package/console-table-printer",
+              href: "https://github.com/ayonious/console-table-printer",
             },
             {
-              label: "npmjs",
+              label: "Npmjs",
               href: "https://www.npmjs.com/package/console-table-printer",
             },
           ],
