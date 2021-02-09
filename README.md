@@ -1,13 +1,13 @@
 # Documentation for Console Table Printer
 
-# 🎁 Run instruction
+# 🎁 Run Instruction
 
 ```bash
 yarn
 yarn start
 ```
 
-# 🎁 Test instruction
+# 🎁 Test Instruction
 
 ```bash
 yarn test-integration
