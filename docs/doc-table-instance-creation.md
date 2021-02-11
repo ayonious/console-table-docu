@@ -69,7 +69,7 @@ new Table({
 ## Functions of table instance
 
 - `addRow(rowObjet, options)` adding single row.
-- `addRows(rowObjets, options)` adding multiple rows. array of row object. This case options will be applied to all the objects in row
+- `addRows(rowObjects, options)` adding multiple rows. array of row object. This case options will be applied to all the objects in row
 - `addColumn(columnObject)` adding single column
 - `addColumns(columnObjects)` adding multiple columns
 - `printTable()` Prints the table on your console

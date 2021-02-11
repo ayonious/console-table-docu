@@ -10,7 +10,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 ## Installation
 
 ```bash npm2yarn
-npm install console-table-printer --save
+npm install --save console-table-printer
 ```
 
 ## Basic Example

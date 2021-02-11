@@ -120,6 +120,9 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
+          remarkPlugins: [
+            [require('@docusaurus/remark-plugin-npm2yarn'), {sync: true}],
+          ],
           // this enabled the edit button for documentation
           editUrl:
             "https://github.com/ayonious/console-table-docu/blob/master/",

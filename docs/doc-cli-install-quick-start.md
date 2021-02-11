@@ -5,6 +5,8 @@ sidebar_label: Quick Start
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 ## Synopsis
 
@@ -12,9 +14,28 @@ Printing Simple Table on your bash terminal. Its useful when you want to present
 
 ## Installation
 
-```bash npm2yarn
-npm install table-printer-cli -g
+<Tabs defaultValue="npm" values={[
+{ label: 'npm', value: 'npm', },
+{ label: 'Yarn', value: 'yarn', },
+]}>
+
+<TabItem value="npm">
+
+```bash
+npm install --global table-printer-cli
 ```
+
+</TabItem>
+
+<TabItem value="yarn">
+
+```bash
+yarn global add table-printer-cli
+```
+
+</TabItem>
+
+</Tabs>
 
 ## Basic Example
 
