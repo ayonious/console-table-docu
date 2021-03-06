@@ -10,6 +10,7 @@ module.exports = {
       "doc-computed-function",
       "doc-title",
       "doc-column-title",
+      "doc-limit-line-width",
       "doc-border-design",
       "doc-render-console",
       "doc-typescript",
