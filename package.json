@@ -12,12 +12,12 @@
     "test-integration": "start-server-and-test start 3000 cy:run"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.72",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.72",
-    "@docusaurus/remark-plugin-npm2yarn": "2.0.0-alpha.72",
+    "@docusaurus/core": "^2.0.0-beta.0",
+    "@docusaurus/preset-classic": "^2.0.0-beta.0",
+    "@docusaurus/remark-plugin-npm2yarn": "2.0.0-beta.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "styled-components": "^5.2.3"
+    "styled-components": "^5.3.0"
   },
   "browserslist": {
     "production": [
@@ -32,13 +32,13 @@
     ]
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^2.0.0-alpha.72",
+    "@docusaurus/module-type-aliases": "^2.0.0-beta.0",
     "@tsconfig/docusaurus": "^1.0.2",
-    "@types/react": "^17.0.3",
-    "@types/react-helmet": "^6.1.0",
+    "@types/react": "^17.0.5",
+    "@types/react-helmet": "^6.1.1",
     "@types/react-router-dom": "^5.1.7",
     "@types/styled-components": "^5.1.9",
-    "cypress": "^7.0.1",
+    "cypress": "^7.3.0",
     "start-server-and-test": "^1.12.1",
     "typescript": "^4.2.4"
   }
