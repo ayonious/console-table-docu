@@ -6,16 +6,24 @@ sidebar_label: Limit Column Width
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-By default all lines are printed in single line. But in case you want to put fixed width of column you can mention it in the column props "maxLen"
+## maxLen
+
+Limit the max Length of each column using this.
+
+By default all lines are printed in single line. But in case you want to put max width of column lines will be splitted into multiples.
 
 ```javascript
 const { Table } = require("console-table-printer");
 
 const p = new Table({
   columns: [
-    { name: "red_left_align_index", alignment: "left", color: "red" },
-    // highlight-next-line
-    { name: "right_align_text", alignment: "right", maxLen: 10 },
+    { name: "Index", alignment: "left", color: "red" },
+    {
+      name: "right_align_text",
+      alignment: "right",
+      maxLen: 10,
+      title: "maxLen10",
+    },
     { name: "green", alignment: "center", color: "green" },
   ],
 });
@@ -23,7 +31,7 @@ const p = new Table({
 // add rows with color
 p.addRow(
   {
-    red_left_align_index: 2,
+    Index: 2,
     right_align_text: "This row is blue",
     green: 10.212,
   },
@@ -31,55 +39,71 @@ p.addRow(
 );
 p.addRow(
   {
-    red_left_align_index: 3,
+    Index: 3,
     right_align_text: "I would like some red wine please",
     green: 10.212,
   },
   { color: "red" }
-);
-p.addRow(
-  {
-    red_left_align_index: 4,
-    right_align_text: "I would like some cyan wine please",
-    green: 10.212,
-  },
-  { color: "cyan" }
-);
-p.addRow(
-  {
-    red_left_align_index: 5,
-    right_align_text: "I would like some white_bold wine please",
-    green: 10.212,
-  },
-  { color: "white_bold" }
-);
-p.addRow(
-  {
-    red_left_align_index: 6,
-    right_align_text: "I would like some crimson sky please",
-    green: 10.212,
-  },
-  { color: "crimson" }
-);
-p.addRow(
-  {
-    red_left_align_index: 7,
-    right_align_text: "I would like some green gemuse please",
-    green: 20.0,
-  },
-  { color: "green" }
-);
-p.addRow(
-  {
-    red_left_align_index: 8,
-    right_align_text: "I would like some gelb bananen bitte",
-    green: 100,
-  },
-  { color: "yellow" }
 );
 
 // print
 p.printTable();
 ```
 
-<img alt="Screenshot" src={useBaseUrl('img/examples/doc-limit-line-width/screenshot.png')}/>
+<img alt="Screenshot" src={useBaseUrl('img/examples/doc-limit-line-width/screenshot1.png')}/>
+
+## minLen
+
+You can also use minLen accordingly
+
+```javascript
+const { Table } = require("console-table-printer");
+
+const p = new Table({
+  columns: [
+    {
+      name: "Index",
+      alignment: "left",
+      color: "red",
+      minLen: 15,
+      title: "minLen15",
+    },
+    {
+      name: "right_align_text",
+      alignment: "right",
+      maxLen: 15,
+      title: "maxLen15",
+    },
+    {
+      name: "green",
+      alignment: "center",
+      color: "green",
+      minLen: 20,
+      title: "minLen20",
+    },
+  ],
+});
+
+// add rows with color
+p.addRow(
+  {
+    Index: 2,
+    right_align_text: "This row is blue",
+    green: 10.212,
+  },
+  { color: "blue" }
+);
+p.addRow(
+  {
+    Index: 3,
+    right_align_text: "I would like some red wine please",
+    green: 10.212,
+  },
+  { color: "red" }
+);
+
+// print
+p.printTable();
+```
+
+<img alt="Screenshot" src={useBaseUrl('img/examples/doc-limit-line-width/screenshot2.png')}/>
