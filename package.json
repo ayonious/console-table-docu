@@ -39,7 +39,7 @@
     "@types/react-router-dom": "^5.1.7",
     "@types/styled-components": "^5.1.9",
     "cypress": "^7.3.0",
-    "start-server-and-test": "^1.12.1",
+    "start-server-and-test": "^1.12.2",
     "typescript": "^4.2.4"
   }
 }
