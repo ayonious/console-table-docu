@@ -9,6 +9,7 @@
     "deploy": "docusaurus deploy",
     "cy:run": "cypress run",
     "cypress-web": "cypress open",
+    "unit-test": "echo notest",
     "test-integration": "start-server-and-test start 3000 cy:run"
   },
   "dependencies": {
@@ -34,12 +35,12 @@
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^2.0.0-beta.0",
     "@tsconfig/docusaurus": "^1.0.2",
-    "@types/react": "^17.0.5",
+    "@types/react": "^17.0.9",
     "@types/react-helmet": "^6.1.1",
     "@types/react-router-dom": "^5.1.7",
     "@types/styled-components": "^5.1.9",
-    "cypress": "^7.3.0",
-    "start-server-and-test": "^1.12.2",
-    "typescript": "^4.2.4"
+    "cypress": "^7.4.0",
+    "start-server-and-test": "^1.12.5",
+    "typescript": "^4.3.2"
   }
 }
