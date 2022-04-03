@@ -88,7 +88,7 @@ const p = new Table({
   ],
   colorMap: {
     // highlight-next-line
-    custom_green: '\x1b[32m', // define customized color
+    custom_green_underscore: '\x1b[4m\x1b[32m', // define customized color
   },
 });
 
@@ -96,7 +96,7 @@ p.addRow({ index: 1, text: 'red wine' }, { color: 'green' });
 p.addRow(
   { index: 2, text: 'green gemuse'},
   // highlight-next-line
-  { color: 'custom_green' } // your green
+  { color: 'custom_green_underscore' } // your green
 );
 p.addRow(
   { index: 3, text: 'gelb bananen'},
@@ -109,4 +109,4 @@ p.addRow(
 p.printTable();
 ```
 
-<img alt="Screenshot" src={useBaseUrl('img/examples/doc-color/screenshot-custom-colored.png')}/>
+<img alt="Screenshot" src={useBaseUrl('img/examples/doc-color/screenshot-custom-colored-2.png')}/>
