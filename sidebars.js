@@ -3,6 +3,7 @@ module.exports = {
     "Console Table Printer": [
       "doc-install-quick-start",
       "doc-table-instance-creation",
+      "doc-adding-rows",
       "doc-color",
       "doc-sort-filter",
       "doc-alignment",
