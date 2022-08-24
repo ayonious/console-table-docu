@@ -13,6 +13,7 @@ module.exports = {
       "doc-column-title",
       "doc-limit-line-width",
       "doc-border-design",
+      "doc-emojis-special-chars",
       "doc-render-console",
       "doc-typescript",
     ],
