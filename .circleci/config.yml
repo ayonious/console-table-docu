@@ -19,5 +19,5 @@ jobs:
 
       - run: yarn build
       - run:
-        name: "Integration Tests"
-        command: yarn test-integration
+          name: "Integration Tests"
+          command: yarn test-integration
