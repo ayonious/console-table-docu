@@ -71,7 +71,6 @@ p.printTable();
 - blue
 - magenta
 - cyan
-- crimson
 - white_bold
 
 ## Custom Color
