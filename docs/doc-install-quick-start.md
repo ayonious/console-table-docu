@@ -20,8 +20,8 @@ const { printTable } = require("console-table-printer");
 
 //Create a table
 const testCases = [
-  { index: 3, text: "I would like some gelb bananen bitte", value: 100 },
-  { index: 4, text: "I hope batch update is working", value: 300 },
+  { Type: "Wish", text: "I would like some gelb bananen bitte", value: 100 },
+  { Type: "Hope", text: "I hope batch update is working", value: 300 },
 ];
 
 //print
@@ -30,4 +30,4 @@ printTable(testCases);
 
 Output:
 
-<img alt="Screenshot" src={useBaseUrl('img/examples/doc-install-quick-start/quick-print.png')}/>
+<img alt="Screenshot" src={useBaseUrl('img/examples/doc-install-quick-start/quick-print-1.png')}/>
