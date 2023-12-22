@@ -5,6 +5,7 @@ module.exports = {
       "doc-table-instance-creation",
       "doc-adding-rows",
       "doc-color",
+      "doc-no-ascii",
       "doc-sort-filter",
       "doc-alignment",
       "doc-enable-disable-col",
