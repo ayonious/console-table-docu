@@ -13,12 +13,12 @@
     "test-integration": "start-server-and-test start http://localhost:3000 cy:run"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.4.1",
-    "@docusaurus/preset-classic": "^2.4.1",
-    "@docusaurus/remark-plugin-npm2yarn": "2.4.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "styled-components": "^6.0.3"
+    "@docusaurus/core": "^3.7.0",
+    "@docusaurus/preset-classic": "^3.7.0",
+    "@docusaurus/remark-plugin-npm2yarn": "3.7.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "styled-components": "^6.1.18"
   },
   "browserslist": {
     "production": [
@@ -33,14 +33,14 @@
     ]
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^2.4.1",
-    "@tsconfig/docusaurus": "^2.0.0",
-    "@types/react": "^18.2.14",
-    "@types/react-helmet": "^6.1.6",
+    "@docusaurus/module-type-aliases": "^3.7.0",
+    "@tsconfig/docusaurus": "^2.0.3",
+    "@types/react": "^19.1.5",
+    "@types/react-helmet": "^6.1.11",
     "@types/react-router-dom": "^5.3.3",
-    "@types/styled-components": "^5.1.26",
-    "cypress": "^12.17.0",
-    "start-server-and-test": "^2.0.0",
-    "typescript": "^5.1.6"
+    "@types/styled-components": "^5.1.34",
+    "cypress": "^14.4.0",
+    "start-server-and-test": "^2.0.12",
+    "typescript": "^5.8.3"
   }
 }
