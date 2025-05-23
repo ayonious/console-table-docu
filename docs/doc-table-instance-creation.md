@@ -66,6 +66,36 @@ new Table({
 });
 ```
 
+
+```js
+new Table({
+  title: 'Title of the Table', // A text showsup on top of table (optoinal)
+  columns: [
+    { name: 'column1', alignment: 'left', color: 'red' }, // with alignment and color
+    { name: 'column2', alignment: 'right', maxLen: 30 }, // lines bigger than this will be splitted in multiple lines
+    { name: 'column3', title: 'Column3' }, // Title is what will be shown while printing, by default title = name
+  ],
+  rows: [{ column1: 'row1' }, { column2: 'row2' }, { column3: 'row3' }],
+  sort: (row1, row2) => row2.column1 - row1.column1, // sorting order of rows (optional), this is normal js sort function for Array.sort
+  filter: (row) => row.column1 < 3, // filtering rows (optional)
+  enabledColumns: ['column1'], // array of columns that you want to see, all other will be ignored (optional)
+  disabledColumns: ['column2'], // array of columns that you DONT want to see, these will always be hidden
+  colorMap: {
+    custom_green: '\x1b[32m', // define customized color
+  },
+  charLength: {
+    '👋': 2,
+    '😅': 2,
+  }, // custom len of chars in console
+  defaultColumnOptions: {
+    alignment: 'center',
+    color: 'red',
+    maxLen: 40,
+    minLen: 20,
+  },
+});
+```
+
 ## Functions of table instance
 
 - `addRow(rowObjet, options)` adding single row.
