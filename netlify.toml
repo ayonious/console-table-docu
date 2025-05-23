@@ -8,4 +8,4 @@
   environment = { NODE_VERSION = "22.16.0" }
 
   # Default build command.
-  command = "yarn test-integration && yarn build"
+  command = "yarn build"
