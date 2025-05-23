@@ -4,6 +4,8 @@ module.exports = {
       "doc-install-quick-start",
       "doc-table-instance-creation",
       "doc-adding-rows",
+      "doc-row-divider",
+      "doc-add-columns",
       "doc-color",
       "doc-no-ascii",
       "doc-sort-filter",

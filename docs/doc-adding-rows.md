@@ -6,8 +6,6 @@ sidebar_label: Adding Rows
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-## Adding Rows
-
 ### One row at a time
 
 ```js
