@@ -17,8 +17,7 @@ jobs:
             - node_modules
           key: deps-hash-{{ checksum "yarn.lock" }}
 
-      - name: Install Cypress
-        run: npx cypress install
+      - run: npx cypress install 
       - run: yarn test-integration
       - run: yarn build
       
