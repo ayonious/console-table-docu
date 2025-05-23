@@ -1,8 +1,13 @@
 version: 2.1
+
+orbs:
+  cypress: cypress-io/cypress@3
+
 jobs:
   build:
     docker:
-      - image: cimg/node:22.16.0
+      - image: cimg/node:20.11.1-browsers
+    resource_class: large
     steps:
       - checkout
       - restore_cache:
@@ -15,10 +20,38 @@ jobs:
       - save_cache:
           paths:
             - node_modules
+            - ~/.cache/Cypress
           key: deps-hash-{{ checksum "yarn.lock" }}
 
       - run: yarn build
-      # does not work on circle ci because memory runs out
-      # - run:
-      #     name: "Integration Tests"
-      #     command: yarn test-integration
+
+      - run:
+          name: Start Server
+          command: yarn start
+          background: true
+
+      - run:
+          name: Wait for Server
+          command: |
+            timeout=30
+            counter=0
+            until curl --output /dev/null --silent --head --fail http://localhost:3000; do
+              if [ $counter -eq $timeout ]; then
+                echo "Timed out waiting for server to start"
+                exit 1
+              fi
+              counter=$((counter+1))
+              echo "Waiting for server to start... ($counter/$timeout)"
+              sleep 1
+            done
+
+      - run:
+          name: Run Integration Tests
+          command: yarn cypress run
+          no_output_timeout: 30m
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
