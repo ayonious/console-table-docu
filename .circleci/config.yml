@@ -1,8 +1,5 @@
 version: 2.1
 
-orbs:
-  cypress: cypress-io/cypress@3
-
 jobs:
   build:
     docker:
@@ -10,12 +7,24 @@ jobs:
     resource_class: large
     steps:
       - checkout
+
+      # Install Chrome (latest stable)
+      - run:
+          name: Install Chrome
+          command: |
+            sudo apt-get update
+            sudo apt-get install -y google-chrome-stable
+
       - restore_cache:
           keys:
             - deps-hash-{{ checksum "yarn.lock" }}
             - deps-hash- # used if checksum fails
 
-      - run: yarn install
+      - run:
+          name: Install Dependencies
+          command: |
+            yarn install
+            yarn cypress verify
 
       - save_cache:
           paths:
@@ -23,7 +32,9 @@ jobs:
             - ~/.cache/Cypress
           key: deps-hash-{{ checksum "yarn.lock" }}
 
-      - run: yarn build
+      - run:
+          name: Build
+          command: yarn build
 
       - run:
           name: Start Server
@@ -46,9 +57,15 @@ jobs:
             done
 
       - run:
-          name: Run Integration Tests
-          command: yarn cypress run
+          name: Run Cypress Tests
+          command: |
+            yarn cypress run --browser chrome --headless
           no_output_timeout: 30m
+
+      - store_artifacts:
+          path: cypress/videos
+      - store_artifacts:
+          path: cypress/screenshots
 
 workflows:
   version: 2
