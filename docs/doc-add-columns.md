@@ -32,7 +32,7 @@ p.addRow({ Serial: "A002", Name: "Mouse", Price: 29.99 });
 p.printTable();
 ```
 
-<img alt="Screenshot" src={useBaseUrl('img/examples/doc-add-columns/screenshot-single-column-1.png')}/>
+<img alt="Screenshot" src={useBaseUrl('img/examples/doc-add-columns/screenshot-single-column-2.png')}/>
 
 ### Adding Multiple Columns at Once
 
@@ -58,7 +58,7 @@ p.addRows([
 p.printTable();
 ```
 
-<img alt="Screenshot" src={useBaseUrl('img/examples/doc-add-columns/screenshot-multiple-columns-1.png')}/>
+<img alt="Screenshot" src={useBaseUrl('img/examples/doc-add-columns/screenshot-multiple-columns-2.png')}/>
 
 ### Chained Column Adding
 
@@ -79,7 +79,7 @@ p.addRow({ Weight: "1.8kg", Color: "Silver", Price: 149.99 });
 p.printTable();
 ```
 
-<img alt="Screenshot" src={useBaseUrl('img/examples/doc-add-columns/screenshot-chained-columns-1.png')}/>
+<img alt="Screenshot" src={useBaseUrl('img/examples/doc-add-columns/screenshot-chained-columns-2.png')}/>
 
 ### Mixing Different Column Addition Methods
 
@@ -118,7 +118,7 @@ p.addRows([
 p.printTable();
 ```
 
-<img alt="Screenshot" src={useBaseUrl('img/examples/doc-add-columns/screenshot-mixed-methods-1.png')}/>
+<img alt="Screenshot" src={useBaseUrl('img/examples/doc-add-columns/screenshot-mixed-methods-2.png')}/>
 
 ### Column Properties
 
