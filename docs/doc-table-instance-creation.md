@@ -66,6 +66,29 @@ new Table({
 });
 ```
 
+### 4. Bonus example
+
+```javascript
+new Table({
+  columns: [
+    { name: "product" },     // Will inherit all defaultColumnOptions
+    { name: "quantity" },    // Will inherit all defaultColumnOptions
+    { name: "price", alignment: "right" }  // Will override the default alignment
+  ],
+  defaultColumnOptions: {
+    alignment: "center",     // Default center alignment for all columns
+    color: "green",         // Default green color for all columns
+    maxLen: 20,            // Default maximum length for all columns
+    minLen: 10            // Default minimum length for all columns
+  },
+  rows: [
+    { product: "Laptop", quantity: 5, price: 999.99 },
+    { product: "Mouse", quantity: 10, price: 24.99 },
+    { product: "Keyboard", quantity: 7, price: 59.99 }
+  ]
+});
+```
+
 ## Functions of table instance
 
 - `addRow(rowObjet, options)` adding single row.
